@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>JS Practice</title>
-<script src="jsPractice.js"></script>
-</head>
-<body>
 
+<head>
+    <title>JS Practice</title>
+    <!-- <script src="jsPractice.js"></script> -->
+    <!-- <script src="jsPractice2.js"></script> -->
+    <script src="components/myButton.js"></script>
+    <script src="components/tooltipElement.js"></script>
+    <script src="components/card.js"></script>
+    <script src="components/infiniteScroll.js"></script>
+
+</head>
+
+<body>
+    <!-- 
 <h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<p>This is a paragraph.</p> -->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+    <div class="container">
+        <tooltip-element tooltip-content="This is sample tooltip" position="Top">
+            <my-button text="Show"></my-button>
+        </tooltip-element>
+        <my-card>
+            <span slot="firstname">John</span>
+            <span slot="lastname">Doe</span>
+            <span slot="age">28</span>
+            <span slot="email">john.doe@gmail.com</span>
+        </my-card>
+
+    </div>
+    <infinite-scroll></infinte-scroll>
+
 
 </body>
+
 </html>

@@ -98,7 +98,14 @@ console.log(Array.isArray(fruits)); // true
 // 13. join(): joins all elements of an array into a string
 console.log(fruits.join()); // banana,apple,orange
 
-// 14. 
+// 14. lastIndexOf(): search the array for an element, starting at the end, and returns its position
+var fruits = ["banana", "apple", "orange", "apple"];
+console.log(fruits.lastIndexOf("apple")); // 3
+
+// 15. map(): creates a new array with the result of calling a function for each array element
+var numbers = [4, 9, 16, 25];
+var x = numbers.map(Math.sqrt);
+console.log(x); // [2, 3, 4, 5]
 
 
 
